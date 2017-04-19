@@ -1,0 +1,371 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+    color: #fff;
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+    color: #333;
+    text-shadow: none; /* Prevent inheritance from `body` */
+    background-color: #fff;
+    border: 1px solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+    height: 100%;
+
+
+}
+body {
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+
+
+
+
+.site-wrapper {
+
+    background: #333;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #333, #111);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #333, #111); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    background-image: url("/resources/images/texture.jpg");
+    background-attachment: fixed;
+    background-position: center;
+
+
+    width: 100%;
+    min-height: 100%;
+    -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+    box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+    padding-bottom: 50px;
+}
+.site-wrapper-inner {
+    vertical-align: top;
+}
+.cover-container {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
+
+/* Padding for spacing */
+.inner {
+    padding: 30px;
+}
+
+
+/*
+ * Header
+ */
+.masthead-brand{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.masthead-nav > li {
+    display: inline-block;
+}
+.masthead-nav > li + li {
+    margin-left: 20px;
+}
+.masthead-nav > li > a {
+    padding-right: 0;
+    padding-left: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff; /* IE8 proofing */
+    color: rgba(255,255,255,.75);
+    border-bottom: 2px solid transparent;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+    background-color: transparent;
+    border-bottom-color: #a9a9a9;
+    border-bottom-color: rgba(255,255,255,.25);
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+    color: #fff;
+    border-bottom-color: #fff;
+}
+
+@media (min-width: 768px) {
+    .masthead-brand {
+        float: left;
+    }
+    .masthead-nav {
+        float: right;
+    }
+}
+
+
+/*
+ * Cover
+ */
+
+.cover {
+    padding: 0 20px;
+}
+.cover .btn-lg {
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+    color: #999; /* IE8 proofing */
+    color: rgba(255,255,255,.5);
+}
+
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+    /* Pull out the header and footer */
+    .masthead {
+        position: fixed;
+        top: 0;
+    }
+    .mastfoot {
+        position: fixed;
+        bottom: 0;
+    }
+    /* Start the vertical centering */
+    .site-wrapper-inner {
+        vertical-align: middle;
+    }
+    /* Handle the widths */
+    .masthead,
+    .mastfoot,
+    .cover-container {
+        width: 100%; /* Must be percentage or pixels for horizontal alignment */
+    }
+}
+
+@media (min-width: 992px) {
+    .masthead,
+    .mastfoot,
+    .cover-container {
+        width: 992px;
+    }
+}
+
+.form-horizontal
+{
+    margin-top: 20px;
+}
+
+.bg-danger ul
+{
+    list-style-type: none;
+    background-color: #990000;
+}
+
+@media (min-width: 768px)
+{
+    .masthead.clearfix
+    {
+        position: static;
+        padding-bottom: 20px;
+    }
+    #genre
+    {
+        font-size: 34px;
+    }
+
+    .slick-carousel-person
+    {
+        width: 70%;
+        height: auto;
+        margin-top: 20px;
+    }
+    .carousel-person
+    {
+        padding-left: 100px;
+    }
+}
+
+@media (max-width: 768px)
+{
+    h2
+    {
+        font-size: 23px;
+    }
+
+    .site-wrapper-inner
+    {
+        padding: 30px;
+    }
+
+    .masthead.clearfix, .inner
+    {
+        padding: 0px;
+    }
+
+    body
+    {
+        font-size: 12px;
+    }
+
+    h4
+    {
+        font-size: 12px;
+    }
+
+    h5
+    {
+        font-size: 14px;
+    }
+    h1
+    {
+        font-size: 26px;
+    }
+
+    #character
+    {
+        font-size: 18px;
+    }
+
+
+}
+
+.dropdown-user
+{
+    font-size: 16px;
+    font-weight: bold;
+    color: rgba(255,255,255,.75);
+}
+#dLabel
+{
+    background-color: inherit;
+}
+
+.tab-content
+{
+    padding-top: 10px;
+}
+
+.row-actors
+{
+    vertical-align: middle !important;
+}
+
+.back-button
+{
+    margin-bottom: 20px;
+}
+
+
+.credit-page
+{
+    border-bottom: none;
+}
+
+.genres
+{
+    margin-bottom: 10px;
+}
+
+.h-tag-padding
+{
+    padding-bottom: 20px;
+}
+
+.glyphicon-star
+{
+    color: yellow;
+}
+
+.img-responsive-movie
+{
+    display: inline;
+}
+
+.btn-margin
+{
+    margin-top: 20px;
+}
+
+#title-spacer
+{
+    margin-bottom: 40px;
+}
+
+.row-background
+{
+    background-color: #404040;
+    border: 1px solid #505050;
+}
+
+.row-padding
+{
+    padding-bottom: 10px;
+    border-top: 0px;
+}
+
+.no-border
+{
+    border-bottom: 0px;
+}
+
+.reviews
+{
+    min-width: 100%;
+}
+
+.review-body
+{
+    padding-top: 2px;
+    padding-bottom: 30px;
+}
+
+.review-button
+{
+    margin-top: 20px;
+}
+
+select
+{
+    color: black;
+}
+
+#less-margin
+{
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.inline-block
+{
+    display: inline-block;
+    padding-right: 10px;
+}
